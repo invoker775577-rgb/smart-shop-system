@@ -37,3 +37,6 @@ class NotificationService:
         # Читаем email отправителя из настроек
         sender = os.getenv("SMS_SENDER_EMAIL")
         print(f"📩 SMS от {sender} для {user.name}: {message}")
+
+print("Hello branch")        
+

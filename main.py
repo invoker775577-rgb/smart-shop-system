@@ -31,3 +31,4 @@ if warehouse.check_stock(iphone, wanted_qty):
         print("Ошибка оплаты")
 else:
     print("Товара нет на складе")
+    

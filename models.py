@@ -20,3 +20,8 @@ class Order:
         self.quantity = quantity
         self.status = "Создан"
         self.total_price = product.price * quantity
+
+    def apply_discount(self, percent):
+        discount_amount = (self.total_price * percent) / 100
+        self.total_price -= discount_amount
+        print(f"🎉 Применена скидка {percent}%! Новая цена: {self.total_price}")    
